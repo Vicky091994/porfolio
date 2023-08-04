@@ -3,7 +3,17 @@
 ============= */
 footer{
     background-color: var(--lightGray);
+
+    h2{
+        margin: 24px 0 16px;
+    }
+
+
+
+
+
     @include md{
+        padding: 16px;
         display: grid;
         grid-template-columns: 50% auto;
         grid-template-areas: 
@@ -11,7 +21,11 @@ footer{
         "fb fb";
         gap:16px;
     }
+   
+
+
     #footer-left{
+        padding: 16px;
         @include md{
             grid-area: fl;
         }
@@ -19,6 +33,7 @@ footer{
     }
 
     #footer-right{
+        padding: 16px;
         @include md{
             grid-area: fl;
         }
@@ -26,6 +41,7 @@ footer{
 
 
     #footer-bottom{
+        padding: 24px;
         background-color: var(--charcoal);
           // love // hate
     a:link, a:visited{
