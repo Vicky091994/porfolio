@@ -3,6 +3,27 @@
 ============= */
 footer{
     background-color: var(--lightGray);
+    @include md{
+        display: grid;
+        grid-template-columns: 50% auto;
+        grid-template-areas: 
+        "fl fr"
+        "fb fb";
+        gap:16px;
+    }
+    #footer-left{
+        @include md{
+            grid-area: fl;
+        }
+
+    }
+
+    #footer-right{
+        @include md{
+            grid-area: fl;
+        }
+    }
+
 
     #footer-bottom{
         background-color: var(--charcoal);
@@ -14,6 +35,10 @@ footer{
 
     a:hover, a:active{
         color: var(--green);
+    }
+
+    @include md{
+        grid-area: fb;
     }
     }
 }
