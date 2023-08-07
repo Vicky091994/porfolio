@@ -2,7 +2,8 @@
     Base
 ============= */
 body{
-    background-color: var(--gray);
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
 }
 
 p{
@@ -55,7 +56,7 @@ ul{
 #main-content-right{
     
 
-    border: 1px solid var(--lightGray);
+    border: 1px solid var(--pink);
     margin: 150px 16px 16px;
     padding: 16px;
     text-align: center;
@@ -63,18 +64,17 @@ ul{
     
     img{
         margin-top: -50px;
-        width: 150px;
-        
+        width: 150px;  
     }
 
     #profile-pic{
-        background-image: image("IMG_6247.JPG");
+        background-image: url("../img/IMG_6247.JPG");
         background-size: cover;
         background-position: center;
-        width: 200px;
-        border-radius: 100%;
-        height: 200px;
-        margin: -65px auto 0;
+        width: 5px;
+        border-radius: 50%;
+        height: 5px;
+        margin: -50px auto 0;
     }
 
     h2{
@@ -105,13 +105,13 @@ ul{
             }
 
             a:hover, a:active{
-                color: var(--green);
+                color: var(--pink);
             }
         }
     }
 
     #view-portfolio-btn:link, #view-portfolio-btn:visited{
-        color: var(--darkGreen);
+        color: var(--pink);
         display: inline-block;
         margin-top: 24px;
         transition: 0.25s;

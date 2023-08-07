@@ -18,6 +18,8 @@ html {
   --gray: #f0f0f0;
   --lightGray: #fafafa;
   --charcoal: #404040;
+  --pink: #fc466b;
+  --blue: #3f5efb;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -337,7 +339,8 @@ template {
     Base
 ============= */
 body {
-  background-color: var(--gray);
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
 }
 
 p {
@@ -399,7 +402,7 @@ ul li {
 }
 
 #main-content-right {
-  border: 1px solid var(--lightGray);
+  border: 1px solid var(--pink);
   margin: 150px 16px 16px;
   padding: 16px;
   text-align: center;
@@ -410,13 +413,13 @@ ul li {
   width: 150px;
 }
 #main-content-right #profile-pic {
-  background-image: image("IMG_6247.JPG");
+  background-image: url("../img/IMG_6247.JPG");
   background-size: cover;
   background-position: center;
-  width: 200px;
-  border-radius: 100%;
-  height: 200px;
-  margin: -65px auto 0;
+  width: 5px;
+  border-radius: 50%;
+  height: 5px;
+  margin: -50px auto 0;
 }
 #main-content-right h2 {
   padding-bottom: 16px;
@@ -446,10 +449,10 @@ ul li {
   transition: 0.25s;
 }
 #main-content-right .social-icons li a:hover, #main-content-right .social-icons li a:active {
-  color: var(--green);
+  color: var(--pink);
 }
 #main-content-right #view-portfolio-btn:link, #main-content-right #view-portfolio-btn:visited {
-  color: var(--darkGreen);
+  color: var(--pink);
   display: inline-block;
   margin-top: 24px;
   -webkit-transition: 0.25s;
@@ -494,6 +497,40 @@ textarea {
   -webkit-appearance: none;
 }
 
+select {
+  /* styling */
+  background-color: white;
+  border: thin solid var(--pink);
+  border-radius: 4px;
+  display: inline-block;
+  font: inherit;
+  line-height: 1.5em;
+  padding: 0.5em 3.5em 0.5em 1em;
+  /* reset */
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+/* arrows */
+select.classic {
+  background-image: linear-gradient(45deg, transparent 50%, var(--pink) 50%), linear-gradient(135deg, var(--pink) 50%, transparent 50%), linear-gradient(to right, var(--blue), var(--blue));
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px), 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+}
+
+select.classic:focus {
+  background-image: linear-gradient(45deg, white 50%, transparent 50%), linear-gradient(135deg, transparent 50%, white 50%), linear-gradient(to right, gray, gray);
+  background-position: calc(100% - 15px) 1em, calc(100% - 20px) 1em, 100% 0;
+  background-size: 5px 5px, 5px 5px, 2.5em 2.5em;
+  background-repeat: no-repeat;
+  border-color: grey;
+  outline: 0;
+}
+
 /* =============
     Navigation
 ============= */
@@ -502,13 +539,13 @@ textarea {
 }
 
 .darkGreenLink:link, .darkGreenLink:visited {
-  color: var(--darkGreen);
+  color: var(--blue);
   text-decoration: none;
   display: inline-block;
 }
 
 .darkGreenLink:hover, .darkGreenLink:active {
-  color: var(--green);
+  color: var(--pink);
 }
 
 html {
@@ -520,7 +557,8 @@ html {
 }
 
 nav {
-  background-color: var(--green);
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
   display: none;
 }
 @media (min-width: 1024px) {
@@ -542,7 +580,7 @@ nav {
             align-items: center;
     width: 100%;
     padding: 24px 0;
-    border-bottom: 2px solid var(--darkGreen);
+    border-bottom: 2px solid var(--pink);
   }
 }
 nav ul li {
@@ -569,7 +607,8 @@ header {
   padding: 16px;
   position: fixed;
   width: 100%;
-  background-color: var(--gray);
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   -webkit-box-shadow: 0px 1px 1px rgba(42, 48, 54, 0.3);
@@ -597,7 +636,7 @@ header #burger-container {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  background-color: var(--green);
+  background-color: var(--pink);
   padding: 16px 0;
 }
 @media (min-width: 1024px) {
@@ -627,14 +666,14 @@ header a:link, header a:visited {
   letter-spacing: 0.125rem;
 }
 header a:hover, header a:active {
-  color: var(--darkGreen);
+  color: var(--pink);
 }
 header p {
   font-size: 0.875rem;
   font-weight: 300;
   margin-top: 8px;
   letter-spacing: 0.0625rem;
-  color: var(--charcoal);
+  color: var(--black);
   padding-bottom: 30px;
 }
 header nav {
@@ -653,7 +692,8 @@ header nav {
     Footer
 ============= */
 footer {
-  background-color: var(--lightGray);
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
   font-size: 0.875rem;
 }
 footer h2 {
@@ -680,12 +720,12 @@ footer a:link, footer a:visited {
   transition: 0.25s;
 }
 footer a:link:hover, footer a:link:active, footer a:visited:hover, footer a:visited:active {
-  color: var(--darkGreen);
+  color: var(--blue);
 }
 footer .divide {
   width: 100%;
   height: 1px;
-  background-color: var(--gray);
+  background-color: var(--blue);
   margin: 16px 0 8px 0;
 }
 footer #footer-left {
@@ -726,16 +766,16 @@ footer #footer-right form input {
   width: 100%;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  border: 1px solid var(--darkGreen);
+  border: 1px solid var(--blue);
   border-radius: 5px;
 }
 footer #footer-right form button {
-  background-color: var(--darkGreen);
+  background-color: var(---blue);
   color: var(--white);
   border: none;
   margin-left: 8px;
   padding: 8px;
-  border-radius: 100%;
+  border-radius: 50%;
   height: 50px;
   width: 50px;
   -webkit-transition: 0.25s;
@@ -743,7 +783,7 @@ footer #footer-right form button {
   cursor: pointer;
 }
 footer #footer-right form button:hover {
-  background-color: var(--black);
+  background-color: var(--white);
 }
 footer #footer-bottom {
   text-align: center;
@@ -758,7 +798,8 @@ footer #footer-bottom a:link, footer #footer-bottom a:visited {
   font-size: 0.75rem;
 }
 footer #footer-bottom a:hover, footer #footer-bottom a:active {
-  color: var(--green);
+  background: rgb(63, 94, 251);
+  background: radial-gradient(circle, rgb(63, 94, 251) 0%, rgb(252, 70, 107) 100%);
 }
 @media (min-width: 768px) {
   footer #footer-bottom {
@@ -800,7 +841,7 @@ footer #footer-bottom #validator-logo {
 #index-left #index-quote {
   padding-left: 16px;
   font-style: italic;
-  border-left: 2px var(--gray) solid;
+  border-left: 2px var(--pink) solid;
   padding-bottom: 0px;
   padding: 5px 0 5px 10px;
   margin-bottom: 24px;
@@ -824,16 +865,41 @@ footer #footer-bottom #validator-logo {
   margin-bottom: 8px;
 }
 #index-left a:link, #index-left a:visited {
-  color: var(--darkGreen);
+  color: var(--pink);
   text-decoration: none;
 }
 #index-left a:hover, #index-left a:active {
-  color: var(--green);
+  color: var(--pink);
 }
 
-/* =============
-    Research
-============= */
-#research-left img {
-  width: 100%;
+#association-left {
+  padding: 0 16px;
+}
+#association-left h3 {
+  padding-bottom: 24px;
+  font-family: "Oswald", sans-serif;
+  font-size: 1.5rem;
+  font-weight: 300;
+  letter-spacing: 0.125rem;
+}
+#association-left #association-quote {
+  padding-left: 16px;
+  font-style: italic;
+  border-left: 2px var(--pink) solid;
+  padding-bottom: 0px;
+  padding: 5px 0 5px 10px;
+  margin-bottom: 24px;
+}
+#association-left p {
+  padding-bottom: 24px;
+  line-height: 1.5;
+}
+#association-left ul {
+  padding-left: 16px;
+  padding-bottom: 24px;
+}
+#association-left ul li {
+  list-style-type: disc;
+  margin-bottom: 8px;
+  padding-bottom: 24px;
 }

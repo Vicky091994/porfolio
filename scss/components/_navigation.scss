@@ -5,15 +5,15 @@
     font-weight: 600;
 }
 
-// dark green / light green link
+// dark blue / light blue link
  // love // hate
  .darkGreenLink:link, .darkGreenLink:visited{
-    color: var(--darkGreen);
+    color: var(--blue);
     text-decoration: none;
     display: inline-block;
 }
 .darkGreenLink:hover, .darkGreenLink:active{
-    color: var(--green);
+    color: var(--pink);
 }
 
 
@@ -27,7 +27,8 @@ html{
 }
 
 nav{
-    background-color: var(--green);
+    background: rgb(63,94,251);
+    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
     display: none;
 
     @include lg{
@@ -43,7 +44,7 @@ nav{
             align-items: center;
             width: 100%;
             padding: 24px 0;
-            border-bottom: 2px solid var(--darkGreen);
+            border-bottom: 2px solid var(--pink);
         }
 
         li{
