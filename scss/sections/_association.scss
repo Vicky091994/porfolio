@@ -1,20 +1,17 @@
-/* =============
-    Index
-============= */
 .main-content-left {
     padding: 0 16px;
 }
 
-#index-left {
-    h1 {
+#association-left {
+    h3 {
         padding-bottom: 24px;
         font-family: 'Oswald', sans-serif;
-        font-size: 24px; /* Adjust the font size as needed */
+        font-size: 24px; // Adjust the font size as needed
         font-weight: 300;
-        letter-spacing: 2px;
+        letter-spacing: 2px; // Adjust the letter spacing as needed
     }
 
-    #index-quote {
+    #association-quote {
         padding-left: 16px;
         font-style: italic;
         border-left: 2px var(--pink) solid;
@@ -27,24 +24,18 @@
         line-height: 1.5;
     }
 
-    h2 {
-        padding-bottom: 24px;
-        font-family: 'Oswald', sans-serif;
-        font-size: 18px; /* Adjust the font size as needed */
-        font-weight: 300;
-        letter-spacing: 2px;
-    }
-
     ul {
         padding-left: 16px;
-        
+        padding-bottom: 24px;
+
         li {
             list-style-type: disc;
             margin-bottom: 8px;
+            padding-bottom: 24px;
         }
     }
 
-    /* Love and Hate Links */
+    // Love and Hate Links
     a:link,
     a:visited {
         color: var(--pink);

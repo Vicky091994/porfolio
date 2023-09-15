@@ -1,44 +1,43 @@
 /* =============
     Navigation
 ============= */
-.bold-link{
+
+.bold-link {
     font-weight: 600;
 }
 
-// dark blue / light blue link
- // love // hate
- .darkGreenLink:link, .darkGreenLink:visited{
+// Dark blue / light blue link
+// love // hate
+.darkGreenLink:link, .darkGreenLink:visited {
     color: var(--blue);
     text-decoration: none;
     display: inline-block;
 }
-.darkGreenLink:hover, .darkGreenLink:active{
+
+.darkGreenLink:hover, .darkGreenLink:active {
     color: var(--pink);
 }
 
-
-
-html{
+html {
     scroll-behavior: smooth;
 }
 
-.show-menu{
+.show-menu {
     display: block !important;
 }
 
-nav{
-    background: rgb(63,94,251);
-    background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+nav {
+    background: rgb(63, 94, 251);
+    background: radial-gradient(circle, rgba(63, 94, 251, 1) 0%, rgba(252, 70, 107, 1) 100%);
     display: none;
 
-    @include lg{
+    @include lg {
         display: block;
         width: 100%;
     }
 
-    ul{
-
-        @include lg{
+    ul {
+        @include lg {
             display: flex;
             justify-content: space-evenly;
             align-items: center;
@@ -47,24 +46,22 @@ nav{
             border-bottom: 2px solid var(--pink);
         }
 
-        li{
+        li {
             padding: 0 0 24px 24px;
             text-align: left;
 
-            @include lg{
+            @include lg {
                 padding: 0;
             }
 
-            a:link, a:visited{  
+            a:link, a:visited {
                 font-size: rem-calc(14);
                 font-weight: 400;
 
-                &:hover, &:active{
-
+                &:hover, &:active {
 
                 }
-            }
-            
+            }            
         }
     }
 }
